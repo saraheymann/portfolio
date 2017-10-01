@@ -56,7 +56,7 @@ nav{
         blink-caret .75s step-end infinite;
 }
 .parallax-container {
-    height: 200px;
+    height: 100px;
 }
 .upcomingProjects{
     font-family: 'Space Mono', monospace;
@@ -69,3 +69,7 @@ nav{
     from, to { border-color: transparent }
     50% { border-color: orange; }
 }
+.cardRow{
+    margin: 20px;
+}
+
