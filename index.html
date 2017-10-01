@@ -8,8 +8,9 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles.css"> 
     <!--Materialize  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-     <!-- Compiled and minified JavaScript 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
+     <!--google fonts  -->
+     <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    
     <title>Sara Heymann</title>
 </head>
 <body>
@@ -34,8 +35,39 @@
       </ul> 
     </div>
   </nav>
-  <div class="row box">
-    <img />
+  <!--welcome area  -->
+  <div height="200px"class="container row">
+    <h3 class="welcome">Welcome.</h3>
+    <br>
+    <br>
+  </div>
+  <!--parallax -->
+  <div class="parallax-container">
+    <div class="parallax"><img src="./assets/images/background_chain.jpg"></div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h3 class="header upcomingProjects">Upcoming:</h3>
+      <div class="row">
+        <div class="col s12 m7">
+          <div class="card small">
+            <div class="card-image">
+              <img src="./assets/images/chicago_pub_art.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p></p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="./assets/images/chicago_pub_art.jpg"></div>
   </div>
 
   <footer class="page-footer white row">
@@ -47,12 +79,18 @@
             </div>
           </div>
   </footer>
+  
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+  </script>
     
 </body>
 </html>
