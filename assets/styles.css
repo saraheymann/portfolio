@@ -72,4 +72,7 @@ nav{
 .cardRow{
     margin: 20px;
 }
+.card{
+    font-family: 'Space Mono', monospace;
+}
 
