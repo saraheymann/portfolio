@@ -46,7 +46,7 @@
                           <a class="collapsible-header">Installation // Performance</a>
                           <div class="collapsible-body">
                             <ul>
-                                <li><a href="color.html">NutcrackerShadow</a></li>
+                                <li><a href="#nutcrackerShadow">NutcrackerShadow</a></li>
                                 <li><a href="color.html">GingerBreadBleach</a></li>
                                 <li><a href="color.html">LivingRoom</a></li>
                                 <li><a href="grid.html">FortuneTeller</a></li>
@@ -179,8 +179,15 @@
     <div class="container">
       <div class="row">
         <div class="col m9 l10">
-          <div class="section">
-          <p>Header for art content</p>
+          <div class="section content" style="height:1000px">
+          <h3>Artwork</h3>
+          <p>Click on a category to the right</p>
+          </div>
+
+          <div id="nutcrackerShadow" class="section content scrollspy" style="height:1000px">
+            <h3>NutcrackerShadow</h3>
+            <p>Charles Joseph Smith and I collaborated</p>
+
           </div>
         </div>
       </div>
@@ -188,7 +195,11 @@
   </main>
       
         
-       
+  <script>
+    $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+  </script>
               <script
                 src="https://code.jquery.com/jquery-3.2.1.min.js"
                 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

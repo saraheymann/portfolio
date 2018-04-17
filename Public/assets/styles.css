@@ -79,6 +79,9 @@ nav{
 }
 .mainArtBody{
     margin-left: 300px;
-    color: blue;
+}
+.content{
+    text-align: center;
+    font-family: 'Roboto';
 }
 
