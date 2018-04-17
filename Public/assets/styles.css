@@ -77,4 +77,8 @@ nav{
 .card{
     font-family: 'Space Mono', monospace;
 }
+.mainArtBody{
+    margin-left: 300px;
+    color: blue;
+}
 

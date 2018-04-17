@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/saraheymann/portfolio/issues"
   },
-  "homepage": "https://github.com/saraheymann/portfolio#readme"
+  "homepage": "https://github.com/saraheymann/portfolio#readme",
+  "dependencies": {
+    "path": "^0.12.7"
+  }
 }
