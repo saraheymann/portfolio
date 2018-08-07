@@ -19,7 +19,6 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // app.use(express.static(dir));
 // app.use(express.static(__dirname + '/public'));
 app.use(express.static(process.cwd() + '/public'));
-app.use(express.static(process.cwd() + '/public/assets/images'));
 // process.env.PWD = process.cwd();
 // app.use(express.static(path.join(process.env.PWD, 'public')));
 // app.use(express.static("public"));
