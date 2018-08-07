@@ -24,7 +24,7 @@ app.use(express.static(process.cwd() + '/public'));
 // app.use(express.static("public"));
 // app.use('/public', express.static(__dirname + "/public"));
 
-require("./routes/htmlRoutes")(app);
+require("./Routes/htmlRoutes")(app);
 
 app.listen(PORT, function() {
     console.log("App listening on PORT: " + PORT);
