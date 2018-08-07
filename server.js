@@ -1,6 +1,8 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
+var routes = require("./Routes/htmlRoutes");
+
 
 var app = express();
 
@@ -10,6 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+app.use(routes);
 
 // app.use(express.static('/Public'))
 // app.use(express.static(process.cwd() + '/Public'));
@@ -18,8 +21,6 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 // app.use(express.static(dir));
 app.use(express.static(__dirname + '/public'));
-
-require("./Routes/htmlRoutes")(app);
 
 app.listen(PORT, function() {
     console.log("App listening on PORT: " + PORT);
