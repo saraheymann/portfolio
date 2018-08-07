@@ -22,6 +22,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // process.env.PWD = process.cwd();
 // app.use(express.static(path.join(process.env.PWD, 'public')));
 app.use(express.static("public"));
+app.use(express.static("public/images"));
 
 require("./Routes/htmlRoutes")(app);
 
