@@ -19,7 +19,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // app.use(express.static(dir));
 app.use(express.static(__dirname + '/public'));
 
-require("./routes/htmlRoutes")(app);
+require("./Routes/htmlRoutes")(app);
 
 app.listen(PORT, function() {
     console.log("App listening on PORT: " + PORT);
