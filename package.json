@@ -6,6 +6,9 @@
   "scripts": {
     "start": "node server.js"
   },
+  "engines": {
+    "node": "8.11.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/saraheymann/portfolio.git"
