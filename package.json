@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sara Heymann's art+work",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -21,7 +21,7 @@
   "homepage": "https://github.com/saraheymann/portfolio#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.3",
+    "express": "4.16.3",
     "path": "^0.12.7"
   }
 }
