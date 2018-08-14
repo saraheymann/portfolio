@@ -5,7 +5,7 @@ var path = require("path");
 var app = express();
 
 var PORT = process.env.PORT || 3000;
-app.use(express.static(process.cwd() + '/public'));
+app.use(express.static(process.cwd() + '/Public'));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -21,12 +21,6 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // app.use('/public', express.static(__dirname + "/public"));
 
 require("./Routes/htmlRoutes.js")(app);
-// var routes = require("./Routes/htmlRoutes.js");
-
-// app.use("/", routes);
-// app.use("/art", routes);
-// app.use("/news", routes);
-
 
 app.listen(PORT, function() {
     console.log("App listening on PORT: " + PORT);
