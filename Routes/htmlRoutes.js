@@ -7,19 +7,16 @@ module.exports = function(app) {
     });
   
     app.get("/contact", function(req, res) {
-      res.sendFile(path.join(__dirname, "/contact.html"));
+      res.sendFile(path.join(__dirname, "../Public/contact.html"));
     });
 
     app.get("/news", function(req, res) {
-      res.sendFile(path.join(__dirname, "/news.html"));
+      res.sendFile(path.join(__dirname, "../Public/news.html"));
     });
 
     app.get("/web", function(req, res) {
-      res.sendFile(path.join(__dirname, "/web.html"));
+      res.sendFile(path.join(__dirname, "../Public/web.html"));
     });
-    // app.get("/web", function(req, res) {
-    //   res.sendFile(path.join(__dirname, "../public/web.html"));
-    // });
   
     // If no matching route is found default to home
     app.get("*", function(req, res) {

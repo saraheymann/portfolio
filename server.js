@@ -12,14 +12,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-// var dir = path.join(__dirname, 'public');
-// app.use(express.static(dir));
-// app.use(express.static(__dirname + '/public'));
-// process.env.PWD = process.cwd();
-// app.use(express.static(path.join(process.env.PWD, 'public')));
-// app.use(express.static("public"));
-// app.use('/public', express.static(__dirname + "/public"));
-
 require("./Routes/htmlRoutes.js")(app);
 
 app.listen(PORT, function() {
