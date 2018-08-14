@@ -12,7 +12,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-// app.use(express.static('/Public'))
 // var dir = path.join(__dirname, 'public');
 // app.use(express.static(dir));
 // app.use(express.static(__dirname + '/public'));
@@ -21,12 +20,12 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // app.use(express.static("public"));
 // app.use('/public', express.static(__dirname + "/public"));
 
-// require("./Routes/htmlRoutes.js")(app);
-var routes = require("./Routes/htmlRoutes.js");
+require("./Routes/htmlRoutes.js")(app);
+// var routes = require("./Routes/htmlRoutes.js");
 
-app.use("/", routes);
-app.use("/art", routes);
-app.use("/news", routes);
+// app.use("/", routes);
+// app.use("/art", routes);
+// app.use("/news", routes);
 
 
 app.listen(PORT, function() {
