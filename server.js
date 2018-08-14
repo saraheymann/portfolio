@@ -32,10 +32,10 @@ app.listen(PORT, function() {
     console.log("App listening on PORT: " + PORT);
   });
 
-  app.get('/', function (req, res) {
-    res.send('root')
-  })
+  // app.get('/', function (req, res) {
+  //   res.send('../index.html')
+  // })
 
-  app.get('/art', function (req, res) {
-    res.send('./public/art.html')
-  })
+  app.get("/art", function(req, res) {
+    res.sendFile(path.join(__dirname, "/art.html"));
+  });
