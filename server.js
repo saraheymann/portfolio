@@ -20,7 +20,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // app.use(express.static("public"));
 // app.use('/public', express.static(__dirname + "/public"));
 
-require("./Routes/htmlRoutes.js")(app);
+// require("./Routes/htmlRoutes.js")(app);
 // var routes = require("./Routes/htmlRoutes.js");
 
 // app.use("/", routes);
@@ -31,3 +31,11 @@ require("./Routes/htmlRoutes.js")(app);
 app.listen(PORT, function() {
     console.log("App listening on PORT: " + PORT);
   });
+
+  app.get('/', function (req, res) {
+    res.send('root')
+  })
+
+  app.get('/art', function (req, res) {
+    res.send('./public/art.html')
+  })
