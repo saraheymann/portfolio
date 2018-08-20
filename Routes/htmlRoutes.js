@@ -28,7 +28,9 @@ module.exports = function(app) {
         auth: {
           user: MAIL_USER,
           pass: MAIL_PASS
-        }
+        },
+        tls: {rejectUnauthorized: false},
+        debug: true
       });
       mailOpts = {
         from: req.body.name + ' &lt;' + req.body.email + '&gt;',
