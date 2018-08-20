@@ -44,7 +44,7 @@ module.exports = function(app) {
     //       res.render('contact-success');
     //     }
     //   });
-    });
+    // });
   
     // If no matching route is found default to home
     app.get("*", function(req, res) {
