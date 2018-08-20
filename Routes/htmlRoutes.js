@@ -22,7 +22,7 @@ module.exports = function(app) {
     app.post('/contact', function (req, res) {
       let mailOpts, smtpTrans;
       smtpTrans = nodemailer.createTransport({
-        host: 'smtp.saraheymann.com',
+        host: 'mail.saraheymann.com',
         port: 465,
         secure: true,
         auth: {
