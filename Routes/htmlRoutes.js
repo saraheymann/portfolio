@@ -26,7 +26,7 @@ module.exports = function(app) {
         port: 465,
         secure: true,
         auth: {
-          user: MAIL_USER,
+          user: sara@saraheymann.com,
           pass: MAIL_PASS
         },
         tls: {rejectUnauthorized: false},
