@@ -1,8 +1,8 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
-var nodemailer = require(nodemailer);
-require('dotenv').config();
+// var nodemailer = require(nodemailer);
+// require('dotenv').config();
 
 var app = express();
 
