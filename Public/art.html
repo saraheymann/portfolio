@@ -208,7 +208,6 @@
         <li class="bold"><a href="mailto:sara@saraheymann.com" target="_blank" class="waves-effect waves-teal">Email me</a></li>
         <li class="bold"><a href="themes.html" class="waves-effect waves-teal">CV</a></li>
       </ul>
-      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
   </header>
   <main class="mainArtBody">
     <div class="container">
@@ -1306,28 +1305,22 @@
                 src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">
               </script>
               <script>
-                 //SideNav: Initialize collapsible (uncomment the line below if you use the dropdown variation)
+                    // Initialize collapse button
+                //  $(".button-collapse").sideNav('show');
+                 // Initialize collapsible (uncomment the line below if you use the dropdown variation)
                  $(document).ready(function(){
                   $(".button-collapse").sideNav('show');
                     $('.collapsible').collapsible();
                   });
-
-
-                  $('.button-collapse').sideNav({
-                    closeOnClick: true,
-                    draggable: true,
-                  })
-
                   // scrollspy
-                  $(document).ready(function(){
-                  $('.scrollspy').scrollSpy();
-                });
+                $(document).ready(function(){
+                $('.scrollspy').scrollSpy();
+              });
 
-                  // material boxed
-                  $(document).ready(function(){
-                  $('.materialboxed').materialbox();
-                });
-                
+                // material boxed
+                $(document).ready(function(){
+                $('.materialboxed').materialbox();
+              });
                </script>
                
 </body>
