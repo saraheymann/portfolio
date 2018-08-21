@@ -208,11 +208,12 @@
         <li class="bold"><a href="mailto:sara@saraheymann.com" target="_blank" class="waves-effect waves-teal">Email me</a></li>
         <li class="bold"><a href="themes.html" class="waves-effect waves-teal">CV</a></li>
       </ul>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
   </header>
   <main class="mainArtBody">
     <div class="container">
       <div class="row">
-        <div class="col m9 l10">
+        <div class="col s12 m9 l10">
           <div id="start"class="section content">
           <h3>Artwork</h3>
           <p>**THIS SITE IS STILL UNDER CONSTRUCTION. <br>LINKS AT THE TOP WILL NOT WORK<br>PICTURES ARE STILL BEING ADDED**<br>Click on a category to the right<Br>or scroll for *somewhat* chronological order.</p>
@@ -1295,19 +1296,6 @@
     </div>
   </main>
       
-        
-  <script>
-    // scrollspy
-    $(document).ready(function(){
-    $('.scrollspy').scrollSpy();
-  });
-
-    // material boxed
-    $(document).ready(function(){
-    $('.materialboxed').materialbox();
-  });
-
-  </script>
               <script
                 src="https://code.jquery.com/jquery-3.2.1.min.js"
                 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -1318,13 +1306,28 @@
                 src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">
               </script>
               <script>
-                    // Initialize collapse button
-                //  $(".button-collapse").sideNav('show');
-                 // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+                 //SideNav: Initialize collapsible (uncomment the line below if you use the dropdown variation)
                  $(document).ready(function(){
                   $(".button-collapse").sideNav('show');
                     $('.collapsible').collapsible();
                   });
+
+
+                  $('.button-collapse').sideNav({
+                    closeOnClick: true,
+                    draggable: true,
+                  })
+
+                  // scrollspy
+                  $(document).ready(function(){
+                  $('.scrollspy').scrollSpy();
+                });
+
+                  // material boxed
+                  $(document).ready(function(){
+                  $('.materialboxed').materialbox();
+                });
+                
                </script>
                
 </body>
