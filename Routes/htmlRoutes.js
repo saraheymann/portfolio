@@ -22,8 +22,8 @@ module.exports = function(app) {
     app.post('/contact', function (req, res) {
       let mailOpts, smtpTrans;
       smtpTrans = nodemailer.createTransport({
-        host: 'gator4210.hostgator.com',
-        port: 465,
+        host: 'mail.saraheymann.com',
+        port: 25,
         secure: true,
         auth: {
           user: MAIL_USER,
