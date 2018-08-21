@@ -6,6 +6,9 @@ nav{
     color: black;
     padding-bottom: 0px;
 }
+.nav-wrapper{
+    height: 200px
+}
 .navMargin{
     margin-top: 70px
 }
