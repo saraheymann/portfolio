@@ -1,4 +1,4 @@
-/* .footerFlexBody {
+.footerFlexBody {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -6,7 +6,7 @@
 
   .footerFlexMain {
     flex: 1 0 auto;
-  } */
+  }
      
 #navHeight{
     height: 170px;
