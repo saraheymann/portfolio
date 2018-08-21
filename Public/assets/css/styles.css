@@ -6,6 +6,9 @@ nav{
     color: black;
     padding-bottom: 0px;
 }
+.navMargin{
+    margin-top: 70px
+}
 #f1_container {
     position: relative;
     margin: 10px auto;
