@@ -23,7 +23,7 @@ module.exports = function(app) {
       let mailOpts, smtpTrans;
       smtpTrans = nodemailer.createTransport({
         host: 'mail.saraheymann.com',
-        port: 25,
+        port: 465,
         secure: true,
         auth: {
           user: MAIL_USER,
