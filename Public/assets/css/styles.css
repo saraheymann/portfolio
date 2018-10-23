@@ -73,11 +73,19 @@
     from, to { border-color: transparent }
     50% { border-color: orange; }
 }
-.cardRow{
+/* .cardRow{
     margin: 20px;
+} */
+.webDescription{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
 }
 .card{
     font-family: 'Space Mono', monospace;
+}
+#webImage{
+    height: 500px;
+    width: 500px;
 }
 .mainArtBody{
     margin-left: 300px;
