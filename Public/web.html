@@ -15,31 +15,41 @@
      <title>Web</title>
 </head>
 <body>
-    <nav class="nav-extended white row">
+  <nav id="navHeight" class="white row">
     <div>
-      <div id="f1_container" class="brand-logo col s6">
-        <div id="f1_card" class="shadow">
-          <div class="front face">
-            <img height="150px" width="150px" src="./assets/images/Logo.jpg"/>
+        <div class="nav-wrapper">
+          <!-- <div id="f1_container" class="brand-logo col s6"> -->
+            <div id="f1_container" class="brand-logo">
+            <div id="f1_card" class="shadow">
+              <div class="front face">
+                <img height="150px" width="150px" src="assets/images/Logo.jpg"/>
+              </div>
+              <div class="back face center">
+                <img height="150px" width="125px" src="assets/images/betty_card.jpg"/>
+             </div>
           </div>
-          <div class="back face center">
-            <img height="150px" width="125px" src="./assets/images/betty_card.jpg"/>
-         </div>
-      </div>
-    </div>
-    <div>
-      <ul id="nav-mobile" class="right hide-on-med-and-down col s4">
+        </div>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="medium material-icons black">menu</i></a>
+      <!-- <ul id="nav-mobile" class="right hide-on-med-and-down col s5"> -->
+      <ul id="nav-mobile" class="navMargin right hide-on-med-and-down">
         <li><a class="navLink" href="http://www.saraheymann.com">Home</a></li>
         <li><a class="navLink" href="http://www.saraheymann.com/art">Art</a></li>
         <li><a class="navLink" href="http://www.saraheymann.com/news">News</a></li>
-        <li><a class="navLink" href="http://www.saraheymann.com/about">About</a></li>
+        <li><a class="navLink" href="whttp://www.saraheymann.com/about">About</a></li>
         <!-- <li><a class="navLink" href="">Contact</a></li> -->
       </ul> 
+      <ul id="mobile-demo" class="side-nav">
+          <li><a class="navLink" href="http://www.saraheymann.com">Home</a></li>
+          <li><a class="navLink" href="http://www.saraheymann.com/art">Art</a></li>
+          <li><a class="navLink" href="http://www.saraheymann.com/news">News</a></li>
+          <li><a class="navLink" href="whttp://www.saraheymann.com/about">About</a></li>
+          <!-- <li><a class="navLink" href="">Contact</a></li> -->
+        </ul> 
     </div>
   </nav>
 <!--Welcome Area  -->
 <div height="200px"class="container row">
-    <h3 class="welcome">Web Development</h3>
+    <h3 class="welcome hide-on-med-and-down">Web Development</h3>
 </div>
 
 
