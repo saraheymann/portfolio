@@ -17,8 +17,8 @@
 <body>
     <nav class="white row">
           <div>
-            <div class="brand-logo col s6">
-               <img width="375px" src="./assets/images/newspaperName.jpg">
+            <div class="brand-logo">
+               <img class="newsLogo" src="./assets/images/newspaperName.jpg">
             </div>
           </div>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="medium material-icons black">menu</i></a>
@@ -43,33 +43,45 @@
   <div class="section white center">
     <img src="assets/images/news2.gif">
   </div>
+  <!-- card -->
   <div class="row">
       <div class="col s12 m7">
         <div class="card">
           <div class="card-image">
-            <img href="assets/images/basketCase.jpg">
-            <span class="card-title">October 2018</span>
+              <img href="assets/images/basketCase.jpg">
+              <span class="card-title">November 2018</span>
           </div>
           <div class="card-content">
-            <p>Thursday 10/25/18, 6pm:  Small landlords lift the ban teach in, at the Enlace Troy office.  email me for more info!</p>
-          </div>
-          <div class="card-action">
-            <a href="https://www.facebook.com/LTBcoalition/">Lift The Ban</a>
+              <p>Last Sunday at Yolanda.  Art show, performances - come thru! 11/25, 8PM, email for address.</p>
           </div>
         </div>
       </div>
     </div>
-  <!-- <div class="parallax-container">
-    <div class="parallax"><img src="./assets/images/background_chain.jpg"></div>
-  </div> -->
-
+  <!-- card -->
+  <div class="row">
+    <div class="col s12 m7">
+      <div class="card">
+        <div class="card-image">
+            <img href="assets/images/basketCase.jpg">
+            <span class="card-title">October 2018</span>
+        </div>
+        <div class="card-content">
+            <p>Thursday 10/25/18, 6pm:  Small landlords lift the ban teach in, at the Enlace Troy office.  email me for more info!</p>
+        </div>
+        <div class="card-action">
+            <a href="https://www.facebook.com/LTBcoalition/">Lift The Ban</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <footer class="page-footer white row">
     <div class="footer-copyright">
             <div class="container grey-text">
             © 2018 Sara Heymann
-            <a class="black-text text-lighten-4 right col s2" target="_blank" href="https://github.com/saraheymann">Github</a>
-            <a class="black-text text-lighten-4 right col s2" target="_blank" href="https://www.instagram.com/sara_heymann/?hl=en">Instagram</a>
-            <a class="black-text text-lighten-4 right col s2" href="mailto:sara@saraheymann.com" target="_blank">Email me</a>
+            <a class="black-text text-lighten-4 right col s3" target="_blank" href="https://github.com/saraheymann">Github</a>
+            <a class="black-text text-lighten-4 right col s3" target="_blank" href="https://www.instagram.com/sara_heymann/?hl=en">Instagram</a>
+            <a class="black-text text-lighten-4 right col s3" href="mailto:sara@saraheymann.com" target="_blank">Email me</a>
             </div>
           </div>
   </footer>
@@ -81,9 +93,9 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script>
-    $(document).ready(function(){
-      $('.parallax').parallax();
-    });
+    $( document ).ready(function(){
+      $(".button-collapse").sideNav();
+    })
   </script>
     
 </body>

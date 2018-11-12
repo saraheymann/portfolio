@@ -95,10 +95,18 @@
 .artSectionTitle{
     margin-top: 64px;
 }
+.newsLogo{
+    width: 375px;
+}
 
 @media only screen and (max-width: 600px){
     
 .mainArtBody{
     margin-left: 20px;
+}
+.newsLogo{
+    width: 250px;
+    margin-left: 25px;
+    margin-top: 6px;
 }
 }
