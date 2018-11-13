@@ -103,12 +103,16 @@
     #f1_container{
         margin-left: -65px;
     } 
+    .mainArtBody{
+        margin-left: 95px;
+    }
 }
 
 @media only screen and (max-width: 600px){
     
 .mainArtBody{
     margin-left: 20px;
+    overflow: hidden;
 }
 .newsLogo{
     width: 250px;
