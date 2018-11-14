@@ -111,8 +111,9 @@
 @media only screen and (max-width: 600px){
     
 .mainArtBody{
-    margin-left: 20px;
-    overflow: hidden;
+    /* margin-left: 20px;
+    overflow: hidden; */
+    padding: 0px;
 }
 .newsLogo{
     width: 250px;

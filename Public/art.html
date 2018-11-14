@@ -17,8 +17,8 @@
 <body>
   <header>
     <!-- table of Contents -->
-    <!-- <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="medium material-icons black">menu</i></a> -->
-    <ul id="nav-mobile" class="side-nav fixed hide-on-med-and-down" style="transform: translateX(0%);">
+    <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="side-nav fixed" style="transform: translateX(0%);">
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
             <a href="www.saraheymann.com">
@@ -204,14 +204,7 @@
         <li class="divider"></li>
       </ul>
 <!-- mobile table of contents -->
-<!-- <ul id="mobile-demo" class="side-nav">
-  <li><a href="#mortville">Mortville</a></li>
-  <li><a class="navLink" href="http://www.saraheymann.com/web">Web</a></li>
-  <li><a class="navLink" href="http://www.saraheymann.com/art">Art</a></li>
-  <li><a class="navLink" href="http://www.saraheymann.com/news">News</a></li>
-  <li><a class="navLink" href="whttp://www.saraheymann.com/about">About</a></li>
-  
-</ul> -->
+<!--  -->
   </header>
   <main class="mainArtBody">
     <div class="container">
@@ -1314,7 +1307,8 @@
                 //  $(".button-collapse").sideNav('show');
                  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
                  $(document).ready(function(){
-                  $(".button-collapse").sideNav('show');
+                  // $(".button-collapse").sideNav('show');
+                  $(".button-collapse").sideNav();
                     $('.collapsible').collapsible();
                   });
 
@@ -1327,7 +1321,6 @@
                 $(document).ready(function(){
                 $('.materialboxed').materialbox();
               });
-              
                </script>
                
 </body>
