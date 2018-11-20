@@ -19,6 +19,10 @@ module.exports = function(app) {
       res.sendFile(path.join(__dirname, "../Public/web.html"));
     });
 
+    app.get("/graphic", function(req, res) {
+      res.sendFile(path.join(__dirname, "../Public/graphic.html"));
+    });
+
     app.post('/contact', function (req, res) {
       let mailOpts, smtpTrans;
       smtpTrans = nodemailer.createTransport({
