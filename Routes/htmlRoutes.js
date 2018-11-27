@@ -23,6 +23,10 @@ module.exports = function(app) {
       res.sendFile(path.join(__dirname, "../Public/graphic.html"));
     });
 
+    app.get("/yolanda", function(req, res) {
+      res.sendFile(path.join(__dirname, "../Public/yolanda.html"));
+    });
+
     app.post('/contact', function (req, res) {
       let mailOpts, smtpTrans;
       smtpTrans = nodemailer.createTransport({
